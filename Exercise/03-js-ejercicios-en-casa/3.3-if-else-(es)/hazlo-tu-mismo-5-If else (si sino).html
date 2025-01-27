@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazlo-tu-mismo-5-If else (si sino).html</title>
+</head>
+
+<body>
+
+    <!-- 1. Crea una página html llamada index.html
+2.  1. Agrega un botón con la leyenda click me
+    2. grega un botón con la leyenda “reset”
+    3. Agrega un párrafo con id = "details”
+    4. Agrega una función llamada reset. La función inicializará el ancho del div a 10px y su fondo de color amarillo
+    5. Agrega una función llamada “enlarge” La función incrementará el fondo del div en 10px
+    6. Si (If) document.getElementById("details").style.width es más que 500px, el color del fondo será color café/marrón,  sino (else)  azul   -->
+
+<button onclick="reset()">First click on reset</button>
+<button onclick="enlarge()">click me</button>
+<div id="myDiv">
+    <p id="details"></p>
+</div>
+<script>
+    let reset = () => {
+        document.getElementById("myDiv").style.width = "100px";
+        document.getElementById("myDiv").style.height = "100px";
+        document.getElementById("myDiv").style.backgroundColor = "yellow";
+    }
+
+    let enlarge = () => {
+        document.getElementById("myDiv").style.width = "110px";
+        let ancho = document.getElementById("myDiv").style.width;
+        alert(ancho);
+        
+        if (ancho > "500px") {
+            document.getElementById("myDiv").style.backgroundColor = "brown";
+        } else {
+            document.getElementById("myDiv").style.backgroundColor = "blue"
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+El método shift() quita el primer elemento de un arreglo y retorna ese
+elemento. Este método cambia el largo del arreglo. -->
+<h2>shift method</h2>
+
+<body>
+    <script>
+        let arr = new Array("Asaf", "is", "good", "man");
+        console.log(arr);
+        let primerElement = arr.shift();
+        console.log(arr);
+        console.log(primerElement);
+//
+        let array1 = [1, 2, 3];
+        console.log(array1);
+        let firstElement = array1.shift();
+        console.log(array1);
+        // resultado esperado: Array [2, 3]
+        console.log(firstElement);
+        // resultado esperado : 1
+    </script>
+</body>
+
+</html>

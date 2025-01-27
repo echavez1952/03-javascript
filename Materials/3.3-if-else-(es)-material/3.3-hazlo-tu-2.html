@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Hazlo tú 2
+Escribe un programa que reciba entrada del usuario y te avise si el número es
+divisible entre 2.  -->
+
+<input type="text" id="num" placeholder="print number"><br>
+<button onclick="check()">click me</button>
+
+<script>
+    let check = () => {
+        let num1 = parseInt(document.getElementById("num").value);
+        let resid = num1 % 2;
+        if (resid == 0) {      // tambien if ( (num1 % 2) == 0 )   
+            alert(num1 + " es divisible para 2");
+        }
+        else {
+            alert(num1 + " no es divisible para 2");
+        }
+    }
+</script>
+</body>
+
+</html>

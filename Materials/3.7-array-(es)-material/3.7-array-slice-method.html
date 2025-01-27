@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!--
+slice() 
+El método slice() retorna una copia superficial de una porción de
+un arreglo seleccionado de principio a fin (el fin
+puede no estar incluido) donde inicio y fin representan los
+índices de los elementos en el arreglo. 
+El arreglo original no será modificado. -->
+
+    <h1>Arrays slice</h1>
+    <script>
+        // let arr = [];
+        // let arr = new Array("Asaf", "is", "good", "and", "honest", "man");
+        // let str = arr.slice(2);
+        // console.log(str);
+        // // expected: (4) ['good', 'and', 'honest', 'man']
+        // console.log(arr);
+
+        
+        let animals = ['ant', 'bison', 'camel', 'duck', 'elephant', 'tiger', 'leon'];
+        console.log(animals.slice(2));
+        // resultado esperado: Array (5) ['camel', 'duck', 'elephant', 'tiger', 'leon']
+        console.log(animals.slice(2, 4));
+        // resultado esperado : Array (2) ['camel', 'duck']
+        console.log(animals.slice(1, 5));
+        // resultado esperado : Array (4) ['bison', 'camel', 'duck', 'elephant']
+        console.log(animals.slice(-2));
+        // resultado esperado : Array (2) ['tiger', 'leon']
+        console.log(animals.slice(2, -1));
+        // resultado esperado : Array (4) ['camel', 'duck', 'elephant', 'tiger']  
+        console.log(animals.slice(-3,-1))     
+        // resultado esperado: Array (2) ['elephant', 'tiger']
+    </script>
+</body>
+
+</html>

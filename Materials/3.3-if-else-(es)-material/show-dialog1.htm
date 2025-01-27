@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to open a dialog window.</p>
+
+    <button onclick="myFunction()">click me</button>
+    
+    <dialog id="myDialog">This is an open dialog window <br>
+      with two lines
+    </dialog>
+    
+    <script>
+    function myFunction() {
+      const element = document.getElementById("myDialog");
+      console.log(element.open);
+      element.open = true;
+      console.log(element.open);
+    }
+    </script>
+     
+</body>
+</html>

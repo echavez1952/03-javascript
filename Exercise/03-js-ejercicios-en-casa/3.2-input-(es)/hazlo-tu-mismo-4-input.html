@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazlo-tu-mismo-4-input</title>
+</head>
+
+<body>
+    <!-- Descripción:
+Escribe una función que capture el color del usuario 
+y pinte el fondo de la pantalla del color que el usuario eligió. 
+Llama a la función al presionar un botón    -->
+
+    <h2>Ingresar el color favorito</h2>
+    <button onclick="my_color()">Click para cambiar de color</button>
+    <p id="myColor">white</p>
+    <script>
+        let my_color = () => {
+            let color = prompt("red, yellow, pink, green, purple, aqua");
+            document.getElementById("myColor").innerHTML = color;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>

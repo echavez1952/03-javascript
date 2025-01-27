@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch expression</title>
+</head>
+
+<body>
+    <button onclick="check()">click me</button>
+
+    <script>
+        function check() {
+            let fruta = prompt("Escoge 1 fruta; mango, papaya, melon, fresa, manzan, pera")
+            switch (fruta) {
+                case "papaya":
+                    console.log("Tengo papaya");
+                    break;
+                case "mango":
+                    console.log("Tengo mango");
+                    break;
+                case "pera":
+                    console.log("Tengo pera");
+                    break;
+                default:
+                    console.log("No tengo frutas en la casa");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

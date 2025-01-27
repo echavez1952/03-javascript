@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loops-hazlo-tu-mismo-4</title>
+</head>
+
+<body>
+
+    <h2>Práctica - for dentro de for </h2>
+    <h2>Crear Media pirámide descendente</h2>
+    <button onclick="crearTablaMultiplicar()">click me </button>
+    <p id="output"></p>
+
+    <script>
+        const crearTablaMultiplicar = () => {
+            let str = "";
+            for (let i = 0; i < 10; i++) {
+                for (let j = 0; j < (10 - i); j++) {   // <= 10
+                    str += "*";
+                }
+                str += "\n";
+            }
+            document.getElementById("output").innerText = str;
+        }
+    </script>
+</body>
+</html>

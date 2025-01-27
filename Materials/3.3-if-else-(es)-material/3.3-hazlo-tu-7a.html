@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- 3.3 Hazlo tu - 7
+1. Agrega un botón con la leyenda click me.
+2. Agrega:
+a. <img src=”” id=”a1”>
+b. <img src=”” id=”a2”>
+c. <img src=”” id=”a3”>
+3. Escribe un script que recibe un número de la ventana
+emergente.
+4. Si el número es menor que 100, muestra todas las
+imágenes.
+5. Sino, si el número es igual a 100, muestra la primera y
+segunda imagen.
+6. Sino, si el número es mayor a 100, muestra solamente la
+primera imagen.
+7. Invoca las funciones presionando el botón. -->
+
+<h1>Exercise7</h1>
+<button onclick="selectImage()">Select Image</button>
+<br>
+<br>
+<img src="https://www.pngarts.com/files/12/Avengers-PNG-Image.png" id="a1" width="200" height="200">
+<img src="https://www.pngarts.com/files/12/Avengers-PNG-Image-Background.png" id="a2" width="200" height="200">
+<img src="https://www.pngarts.com/files/10/Scarlett-Johansson-Black-Widow-Transparent.png" id="a3" width="200" height="200">
+
+<script>
+function selectImage(){
+    var num1 = prompt("print number")
+    num1 = parseInt(num1)
+    if(num1<100){
+    document.getElementById("a1").style.display = "inline";
+    document.getElementById("a2").style.display = "inline";
+    document.getElementById("a3").style.display = "inline";
+    }
+    else if(num1==100){
+    document.getElementById("a1").style.display = "inline";
+    document.getElementById("a2").style.display = "inline";
+    document.getElementById("a3").hidden = true;
+    }
+    else if(num1>100){
+    document.getElementById("a1").style.display = "inline";
+    document.getElementById("a2").hidden = true;
+    document.getElementById("a3").hidden = true;
+    }
+    }
+</script>
+</body>
+</html>

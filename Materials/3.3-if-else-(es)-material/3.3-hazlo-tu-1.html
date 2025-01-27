@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3-hazlo-tu-1</title>
+</head>
+
+<body>
+    <!-- Hazlo tu 1 -->
+    <!-- Escribe un programa que toma 2 números y alerta el que es el más grande -->
+
+    <input type="text" id="num1" placeholder="print number"><br>
+    <input type="text" id="num2" placeholder="print number"><br>
+    <button onclick="findMax()">click me</button>
+
+    <script>
+        function findMax() {
+            let numx1 = parseInt(document.getElementById("num1").value);
+            let numx2 = parseInt(document.getElementById("num2").value);
+
+            if (numx1 > numx2) {
+                alert(numx1 + " es mas grande que " + numx2);
+            } else if (numx2 > numx1) {
+                alert(numx2 + " es mas grande que " + numx1);
+            } else {
+                alert(numx1 + " es igual a " + numx2);
+            }
+        }  
+    </script>
+</body>
+
+</html>

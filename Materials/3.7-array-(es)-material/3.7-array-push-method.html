@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>push method()</h1>
+    <script>
+        // Adds one or more elements to the end of an array and returns 
+        // the new length of the array
+        let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
+        console.log(arr2);
+        console.log(arr2.push(9));
+        console.log(arr2.push(10));
+        console.log(arr2);
+
+        // Otra forma de insertar un item al final
+        let fruits = ["Banana", "Orange", "Apple", "Mango", "Peach"];
+        console.log(fruits);
+        fruits[fruits.length] = "Kiwi";
+        console.log(fruits);
+
+        let arr = new Array("Asaf", "is", "good", "man");
+        arr.push("wooow");
+        console.log(arr[4]);
+
+        let animals = ['pigs', 'goats', 'sheep'];
+        console.log(animals);
+        let count = animals.push('cows');
+        console.log(count);
+        // expected output: 4
+        console.log(animals);
+        // expected output: Array ["pigs", "goats", "sheep", "cows"]
+        animals.push('chickens', 'cats', 'dogs');
+        console.log(animals);
+        // expected output: Array ["pigs", "goats", "sheep", "cows", "chickens",
+        //"cats", "dogs"]
+    </script>
+</body>
+
+</html>

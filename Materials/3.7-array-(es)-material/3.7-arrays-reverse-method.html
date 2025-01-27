@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- El método reverse() method invierte un arreglo en su lugar. El primer
+elemento del arreglo se convierte el último y el último se convierte en el
+primero. -->
+    <h1>reverse method</h1>
+    <script>
+        let arr = new Array("Asaf", "is", "good", "man");
+        console.log(arr);
+        arr.reverse();
+        let strreverse = arr.join("-");
+        console.log(strreverse);
+
+        let array1 = ['one', 'two', 'three'];
+        console.log('array1:', array1);
+        // resultado esperado: "array1:" Array ["one", "two", "three"]
+        let reversed = array1.reverse();
+        console.log('reversed:', reversed);
+        // resultado esperado : "reversed:" Array ["three", "two", "one"]
+        // Ten cuidado: reverse es destructivo -- cambia el arreglo original.
+        console.log('array1:', array1);
+        // resultado esperado : "array1:" Array ["three", "two", "one"]
+    </script>
+</body>
+
+</html>

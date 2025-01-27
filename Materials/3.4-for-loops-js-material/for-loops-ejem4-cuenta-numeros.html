@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><for-loops-ejem4-cuen></for-loops-ejem4-cuen>ta-numeros.html</title>
+</head>
+
+<body>
+<h2>for loops - howManyBiggerThan20 </h2>
+<button onclick="howManyBiggerThan20()">how many bigger than 20 </button>
+<p id="count"></p>
+<p id="numbers"></p>
+<script>
+    let howManyBiggerThan20 = () => {
+        let counter = 0;
+        for (var i = 0; i < 4; i++) {
+            var n = prompt("insert a number");
+            n = parseInt(n);
+            if (n > 20) {
+                counter++; // counter
+            }
+        }
+        document.getElementById("count").innerText = counter;
+    }
+</script>
+</body>
+
+</html>

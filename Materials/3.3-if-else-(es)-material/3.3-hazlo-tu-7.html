@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: none;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3.3 Hazlo tu - 7
+1. Agrega un botón con la leyenda click me.
+2. Agrega:
+a. <img src=”” id=”a1”>
+b. <img src=”” id=”a2”>
+c. <img src=”” id=”a3”>
+3. Escribe un script que recibe un número de la ventana
+emergente.
+4. Si el número es menor que 100, muestra todas las
+imágenes.
+5. Sino, si el número es igual a 100, muestra la primera y
+segunda imagen.
+6. Sino, si el número es mayor a 100, muestra solamente la
+primera imagen.
+7. Invoca las funciones presionando el botón. -->
+
+    <dialog>
+        <input type="text" id="numero"><br>
+        <button onclick="imagenes()">Aceptar</button>
+        <button onclick="dialogClose()">Cerrar</button>
+        <button onclick="reset()">Reset</button>
+    </dialog>
+    <h2>Display de imágenes</h2><br>
+    <button onclick="dialogOpen()">Click me</button><br>
+    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png" alt="bulbasaur"
+        id="a1">
+    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png" alt="charmander"
+        id="a2">
+    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="squirtle"
+        id="a3">
+</body>
+
+<script>
+    let dialogOpen = () => {
+        document.querySelector('dialog').showModal();
+    }
+    let dialogClose = () => {
+        document.querySelector('dialog').close();
+    }
+    let imagenes = () => {
+        let num = parseInt(document.getElementById("numero").value);
+        if (num < 100) {
+            document.getElementById("a1").style.display = "inline";
+            document.getElementById("a2").style.display = "inline";
+            document.getElementById("a3").style.display = "inline";
+            dialogClose();
+        } else if (num === 100) {
+            document.getElementById("a1").style.display = "inline";
+            document.getElementById("a2").style.display = "inline";
+            document.getElementById("a3").style.display = "none";
+            dialogClose();
+        } else {
+            document.getElementById("a1").style.display = "inline";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a3").style.display = "none";
+            dialogClose();
+        }
+    }
+    let reset = () => {
+        document.getElementById("a1").style.display = "none";
+        document.getElementById("a2").style.display = "none";
+        document.getElementById("a3").style.display = "none";
+        dialogClose();
+    }
+</script>
+
+</html>

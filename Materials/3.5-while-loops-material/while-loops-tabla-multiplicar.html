@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-loops-tabla-multiplicar</title>
+</head>
+<body>
+ <!-- Crear tabla de multiplicar usando while  -->
+
+ <h2>Práctica - Uso del while</h2>
+    <h2>Crear Tabla de Multiplicar</h2>
+    <p>Incluye la salida a la consola</p><br>
+
+    <button onclick="crearTablaMultiplicar()">click me </button>
+    <p id="output"></p>
+    
+    <script>
+    const crearTablaMultiplicar = () => {
+        let result = 0;
+        let str = "";
+        i = 1;
+        while (i <= 10) {
+            console.log(`Tabla del ${i}`);
+            str += "Tabla del " + `${i}` + "\n";
+            j = 1;
+            while (j <= 10) {
+                result = i * j;
+                console.log(`${i} * ${j} = ${result} `);
+                str += (`${i} * ${j} = ${result}` + "\n");
+                j++;
+            }
+            console.log("\n");
+            str += "\n" 
+            i++;
+        }
+        console.log("FIN");  
+        document.getElementById("output").innerText = str + "FIN";
+    }
+    </script>
+    
+</body> 
+</html>

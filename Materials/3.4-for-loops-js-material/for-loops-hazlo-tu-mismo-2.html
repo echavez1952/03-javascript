@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loops-hazlo-tu-mismo-2</title>
+</head>
+<body>
+
+<!-- Hazlo tu mismo 2
+1. Agrega un botón con la leyenda “suma de 5 números”.
+a. Agrega un párrafo con el id="sum".
+b. Escribe un script que reciba 5 números de la ventana emergente.
+c. El script va a calcular la suma de los números.
+d. El script mostrará la suma de los números en el párrafo con id="details".
+e. Invoca las funciones al pulsar el botón. -->
+
+<h2>for loops - acumuladores</h2>
+<button onclick="sumOfNumbers()">Suma de 5 números</button>
+<p id="details"></p>
+    
+    <script>
+        let sumOfNumbers = () => {
+            let sum = 0;
+            for (let i = 0; i < 5; i++) {
+            let n = prompt("Ingrese un número: " );
+            n = parseInt(n);
+                sum += n; // sumador
+            }
+        document.getElementById("details").innerText = sum;
+        }
+  
+    </script>
+</body>
+</html>

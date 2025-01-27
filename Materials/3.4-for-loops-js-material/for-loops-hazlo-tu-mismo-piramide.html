@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loops-hazlo-tu-mismo-5</title>
+</head>
+<body>
+    <h2>Práctica - for dentro de for </h2>
+    <h2>Crear una pirámide descendente</h2>
+    <button onclick="crearPiramyd()">click me </button>
+    <p id="output"></p>
+
+    <script>
+        const crearPiramyd = () => {
+            let ast = "*";
+            let num = "#";
+            // let spc = "\xa0"
+            let asteris = ""
+            let padding = "";
+            let str = "";
+            for (let i = 0; i < 20; i+=2) {
+                // for (let j = 0; j < (20 - i); j+=2) {   // <= 10
+                    asteris = ast.repeat(i + 1);
+                    padding = num.repeat(parseInt((20 - (i+1)) / 2));
+                    str += padding + asteris + padding + "\n";
+                }
+                str += "\n";
+            // }
+            document.getElementById("output").innerText = str;
+        }
+    </script>  
+</body>
+</html>
+
+<!-- let result = "";
+let otro = "";
+
+        let Test = () => {
+            let zero = "0";
+            let result = zero.repeat(10) + "**";
+            console.log(result);
+            let punt = "#"; 
+            let otro = punt.repeat(10) + "**";
+            console.log(otro);
+            document.getElementById("par").innerText = result;
+            document.getElementById("par2").innerText = otro;
+        } -->

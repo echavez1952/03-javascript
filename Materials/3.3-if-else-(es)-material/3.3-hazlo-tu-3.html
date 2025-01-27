@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3-hazlo-tu-3</title>
+</head>
+
+<body>
+<!-- Hazlo tu 3 -->
+<!-- Escribe un programa que recibe el número de la suerte del usuario.
+Si su número de la suerte es 7, alerta "1,000,000$” -->
+<h2>Número de la suerte</h2>
+<input type="text" id="num" maxlenght="80" placeholder="Prueba tu suerte, ingresa un numero (1-20)"><br>
+<button onclick="check()">click me</button>
+
+<script>
+    let check = () => {
+        let x1 = document.getElementById("num").value;
+        let numx1 = parseInt(x1);
+        if (numx1 == "7") {
+            alert("Ganaste $ 1,000,000");
+        }
+        else {
+            alert("Vuelve a intentar");
+        }
+    }  
+    </script>
+</body>
+
+</html>

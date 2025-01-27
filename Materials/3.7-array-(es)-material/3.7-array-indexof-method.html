@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--     
+El método indexOf() retorna el primer índice en el que se puede encontrar el
+elemento dado, o -1 si no está presente -->
+    <h1>arrays indexof </h1>
+    <script>
+        // let arr = new Array("Asaf", "is", "good", "man");
+        // let pos = arr.indexOf("Asaf");
+        // console.log("The index of Asaf id " + pos);
+
+        const beasts = ['ant', 'bison', 'camel', 'duck', 'bison', 'tiger'];
+        console.log(beasts.indexOf('bison'));
+        // resultado esperado : 1
+        // empieza del índice 2
+        console.log(beasts.indexOf('bison', 2));
+        // resultado esperado : 4
+        console.log(beasts.indexOf('giraffe'));
+        // resultado esperado : -1
+
+    </script>
+</body>
+
+</html>

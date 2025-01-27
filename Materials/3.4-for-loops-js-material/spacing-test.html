@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>repeat spaces</h2>
+    <button onclick="Test()">clic me</button>
+    <p id="par"></p>
+    <p id="par2"></p>
+    <script>
+        let result = "";
+        let otro = "";
+
+        let Test = () => {
+            let zero = "0";
+            let result = zero.repeat(10) + "**";
+            console.log(result);
+            let punt = "#"; 
+            let otro = punt.repeat(10) + "**";
+            console.log(otro);
+            document.getElementById("par").innerText = result;
+            document.getElementById("par2").innerText = otro;
+        }
+        
+    </script>
+</body>
+
+</html>

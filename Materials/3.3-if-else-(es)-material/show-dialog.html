@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>The HTML Dialog Object</h1>
+  <h2>The show() and close() Methods</h2>
+
+  <p>Click the buttons to show and close a dialog window.</p>
+
+  <p>
+    <button onclick="showDialog()">Show dialog</button>
+    <button onclick="closeDialog()">Close dialog</button>
+  </p>
+
+  <dialog id="myDialog">This is a dialog window <br>
+    1. Comment <br>
+    2. Text
+  </dialog>
+
+  <script>
+    const element = document.getElementById("myDialog");
+
+    function showDialog() {
+      element.show();
+    }
+
+    function closeDialog() {
+      element.close();
+    } 
+  </script>
+</body>
+
+</html>

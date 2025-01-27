@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+splice
+El método splice() cambia los contenidos de un arreglo al remover o
+reemplazar elementos existentes y/o agregando nuevos elementos en el
+lugar. Para acceder a una parte de un arreglo sin modificarlo, ver slice(). -->
+
+    <h2>Find index of array and remove it from array (splice) </h2>
+
+    <script>
+        // let arr = new Array("Asaf", "is", "good", "and", "honest", "man");
+        // // console.log(arr);
+        // let pos = arr.indexOf("good");
+        // console.log(pos);
+        // arr.splice(pos, 1);
+        // console.log(arr);
+
+
+        let months = ['Jan', 'March', 'April', 'June'];
+        months.splice(1, 0, 'Feb');
+        // inserta en el índice 1
+        console.log(months);
+        // resultado esperado: Array ["Jan", "Feb", "March", "April", "June"]
+        months.splice(4, 1, 'May');
+        // reemplaza 1 elemento en el índice 4
+        console.log(months);
+        // resultado esperado: Array ["Jan", "Feb", "March", "April", "May"]
+        
+    </script>
+
+</body>
+
+</html>

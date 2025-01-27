@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Crea una página html llamada index.html
+Agrega un botón con la leyenda “click me”
+Agrega un botón con “reset caption”
+Agrega un párrafo con id = "details"
+Agrega una función llamada reset. La función va a inicializar el ancho del div a 10px, con un fondo amarillo
+Agrega una función llamada enlarge. La función va a incrementar el fondo del div en 10px -->
+
+<div id="myDiv">
+<p id="details">Details</p> 
+</div> 
+
+<button onclick="init_Div()">reset</button>
+<button onclick="enlarge()">click me</button>
+
+<script>
+let init_Div = () => {
+    document.getElementById("myDiv").style.width = "100px";
+    document.getElementById("myDiv").style.height = "100px";
+    document.getElementById("myDiv").style.border = "2px solid green";
+    document.getElementById("myDiv").style.backgroundColor= "yellow";
+}
+let enlarge = () => {
+    document.getElementById("myDiv").style.width = "110px";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica-for-dentro-de-for-1a</title>
+</head>
+<body>
+    <h2>Práctica - for dentro de for </h2>
+    <h2>Crear Tabla de Multiplicar</h2>
+    <p>Incluye la salida a la consola</p><br>
+
+    <button onclick="crearTablaMultiplicar()">click me </button>
+    <p id="output"></p>
+    
+    <script>
+    const crearTablaMultiplicar = () => {
+        let result = 0;
+        let str = "";
+
+       for (let i = 0; i < 10; i++) {   
+            console.log(`Tabla del ${i + 1}`);
+            str += "Tabla del " + `${i + 1}` + "\n";
+            for (let j = 0; j < 10; j++){
+                result = (i + 1) * (j + 1);
+                console.log(`${i + 1} * ${j + 1} = ${result} `);
+                str += (`${i + 1} * ${j + 1} = ${result} ` + "\n")
+            }
+            console.log("\n");
+            str += "\n" 
+        } 
+    console.log("FIN");  
+    document.getElementById("output").innerText = str + "FIN";
+    }
+    </script>
+</body>
+</html>

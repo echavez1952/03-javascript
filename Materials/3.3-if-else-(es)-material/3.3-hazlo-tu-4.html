@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3-hazlo-tu-4</title>
+</head>
+<body>
+
+<!-- 3.3 Hazlo tú - 4 -->
+<!-- 1. Crea una página html llamada index.html
+    a. Agrega un botón con la leyenda click me.
+    b. Agrega un párrafo con el id = "details”.
+    c. Escribe un script que reciba el número de la suerte del usuario de la ventana emergente.
+    d. Si el número de la suerte del usuario es 777, el usuario verá "1,000,000$” mostrado en
+    azul con fondo de color amarillo, con un borde sólido rojo de 5px.
+    e. Hacer click en el botón activará la función. -->
+
+<h2>Prueba la suerte con un numero</h2>
+<p id="details"></p>
+<button onclick="luck()">click me</button>
+
+
+<script>
+let luck = () => {
+    let n1 = prompt("Ingresa un número (1 - 1000)");
+    let num1 = parseInt(n1);
+    let text = "Ganaste $ 100,000,00";
+    if (num1 == "777") {
+    document.getElementById("details").innerHTML = text;
+    document.getElementById("details").style.width = "30%"; 
+    document.getElementById("details").style.color = "blue";
+    document.getElementById("details").style.border = "5px solid red";
+    document.getElementById("details").style.backgroundColor= 'yellow';      
+    }
+    else {
+        alert("Vuelve a intentar");
+        }
+    }  
+</script>
+</body>
+</html>

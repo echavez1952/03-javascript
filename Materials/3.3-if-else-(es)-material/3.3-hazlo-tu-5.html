@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3-hazlo-tu-5</title>
+</head>
+<body>
+<!-- 1. Crea una página html llamada index.html
+a. Agrega un botón con la leyenda click me.
+b. Agrega un botón con la leyenda reset.
+c. Agrega un párrafo con el id = "details”.
+d. Agrega una función llamada reset. La función inicializará un div con ancho de 10px con un
+fondo de color amarillo.
+e. Agrega una función llamada enlarge. La función agranda el div background en 10px.
+f. Si document.getElementById("details").style.width es mayor que 500px,
+entonces el color del fondo de la página será color café, sino, azul. -->
+
+
+<button onclick="reset()">First click on reset</button>
+<button onclick="enlarge()">click me</button>
+<div id="myDiv">
+    <p id="details"></p>
+   </div>
+
+<script>
+let reset = () => {
+document.getElementById("myDiv").style.width = "10px";
+// document.getElementById("myDiv").style.height = "100px";
+// document.getElementById("myDiv").style.border = "2px solid green";
+document.getElementById("myDiv").style.backgroundColor= 'yellow';
+document.getElementById("details").innerHTML = "1";
+}
+function enlarge() {
+let ancho = document.getElementById("myDiv").style.with;
+alert(ancho);
+// document.getElementById("myDiv").style.width = "20px";
+}
+
+</script>   
+</body>
+</html>

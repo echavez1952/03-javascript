@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazlo-tu-mismo-4-If else (si sino).html</title>
+</head>
+<body>
+<!-- 
+1. Crea una página html llamada index.html 
+2. 1. Agrega un botón con la leyenda click me
+   2. Agrega un párrafo con id = "details”
+   3. Escribe un script que reciba el “número de la suerte” del usuario desde la ventana emergente.
+   4. Si (If) el número de la suerte es 777 el usuario verá "1,000,000$” mostrado de color azul y  un fondo amaerillo con un borde verde sólido de 1px, Sino (else) muestra tu nombre en amarillo con un fondo negro, con un borde rojo sólido de 5px
+   5. Hacer click al botón, activará la función   -->
+    
+   <h2>Prueba la suerte con un número</h2>
+   <p id="details"></p>
+   <button onclick="luck()">click me</button>
+
+<script>
+
+let luck = () => {
+    let y = prompt("Ingresa un número (1 - 1000)");
+    let num1 = parseInt(y);
+    let text = "Ganaste $ 100,000,00";
+    if (num1 == "777") {
+    document.getElementById("details").innerHTML = text;
+    document.getElementById("details").style.width = "30%"; 
+    document.getElementById("details").style.color = "blue";
+    document.getElementById("details").style.border = "1px solid green";
+    document.getElementById("details").style.backgroundColor= "yellow";      
+    }
+    else {
+        document.getElementById("details").innerHTML = "Lotería Nacional"
+        document.getElementById("details").style.width = "30%";
+        document.getElementById("details").style.color = "yellow";
+        document.getElementById("details").style.border = "5px solid red";
+        document.getElementById("details").style.backgroundColor= "black";  
+        }
+    }  
+
+</script>
+</body>
+</html>

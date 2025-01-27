@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loops-hazlo-tu-mismo-1.html</title>
+</head>
+
+<body>
+<!-- 
+   1. Agrega un botón con la leyenda “contar pares”
+    a. Agrega un párrafo con id="details”.
+    b. Escribe un scripts que recibe 4 números de la ventana emergente.
+    c. El script va a contar cuantos números son pares (con for loop).
+    d. El script va a mostrar la cuenta de números pares en el párrafo con id =”details”.
+    e. Invoca las funciones al pulsar el botón. -->
+
+<h2>for loops - contar pares</h2>
+<button onclick="printEven()">contar pares</button>
+<p id="details"></p>
+
+<script>
+    
+let printEven = () => { 
+    let counter = 0;
+    for (let i = 0; i < 4; i++) {
+        let n = parseInt(prompt(`Insert un número ${i + 1}`));
+        
+        if (n % 2 == 0) {
+            counter++; 
+        }
+    }
+    document.getElementById("details").innerText = counter;
+}
+</script>
+</body>
+
+</html>
