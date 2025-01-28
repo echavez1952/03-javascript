@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- sort function  -->
+<h2>JavaScript Arrays</h2>
+<h2>The sort() Method</h2>
+<p>The sort() method sorts the elements of an array.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const points = [40, 100, 1, 5, 25, 10];
+
+// Sort the Array - ascending
+// points.sort(function(a, b){return a-b});
+
+// Sort the Array - descending
+points.sort(function(a, b){return b-a});
+
+
+// Display the Array
+document.getElementById("demo").innerHTML = points;
+
+</script>
+</body>
+</html>
