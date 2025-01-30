@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Hazlo tú mismo 5
+A. Escribe una función de expresión que acepte un arreglo y muestre en alerta con
+el número más grande.
+B. Invoca la función de A usando arr = [1, 6, 2, 9] y alerta el número más grande. -->
+
+<h2>Hazlo tu mismo 5</h2>
+<h2>función de expresión</h2>
+
+<script>
+const maxNumberArray = function(arr) {
+        console.log(arr);
+        // Sort the numbers in ascending order:
+        arr.sort(function(a, b) { return a - b });
+        console.log(arr);
+        maxNumber = arr[arr.length - 1];
+        alert(maxNumber);
+    }
+    arr = [1, 6, 2, 9];
+    maxNumberArray(arr);
+    console.log(maxNumber);
+
+</script>
+</body>
+</html>

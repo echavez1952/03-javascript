@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+Funciones de expresion
+En js, una función puede ser definida basada en una condición. Por ejemplo, la siguiente función
+define myFunc solo si num es igual a 0: -->
+
+<script>
+    var myFunc;
+    var num = 0;
+    if (num === 0) {
+        myFunc = function () {
+            return num++;
+        };
+        myFunc();
+    }
+    console.log(num); // 1
+</script>
+</body>
+</html>

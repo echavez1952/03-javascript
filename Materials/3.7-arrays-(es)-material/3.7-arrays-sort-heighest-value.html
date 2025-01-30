@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The sort() Method</h2>
+    <h2>The highest value</h2>
+    <p>The sort() method sorts the elements of an array.</p>
+    
+    <p id="demo"></p>
+    
+    <script>
+    // Create an Array
+    const points = [40, 100, 1, 5, 25, 10, 650];
+    console.log("Array: " + points);
+    // Sort the numbers in ascending order:
+    points.sort(function(a, b){return a-b});
+    // points[points.length-1] is now the highest value:
+    console.log("Array: " + points);
+    document.getElementById("demo").innerHTML = "The highest value is " + points[points.length-1];
+
+    </script>  
+</body>
+</html>

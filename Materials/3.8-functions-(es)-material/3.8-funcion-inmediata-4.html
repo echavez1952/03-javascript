@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+Funcion inmediata 
+Una función inmediata es la que se ejecuta tan pronto como se define. 
+Continuacion -Qué se va a imprimir? -->
+
+<script>
+
+    var theBiggest = (function (n1, n2) {
+        if (n1 > n2) return n1;
+        else if (n1 < n2) return n2;
+        else return "EQUALS";
+    })(a, b);
+    var a = 6, b = 7;
+    console.log(theBiggest); // EQUALS
+
+</script>
+</body>
+
+</html>

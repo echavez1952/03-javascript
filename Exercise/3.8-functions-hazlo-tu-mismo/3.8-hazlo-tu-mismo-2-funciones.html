@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Hazlo tú mismo 2 : Funciones
+A. Escribe una función de expresión que acepte 3 números. La función retorna el número mayor
+    function maxBetween3numbers(n1, n2, n3) {}
+B. Agrega un botón con la leyenda  find max.
+
+1. Agrega un párrafo con id = "max”
+2. Escribe un script que reciba 3 números de la ventana emergente.
+3. El script va a mostrar en  id = "max” el mayor número (debes usar la función de la parte A.
+4. Llama a las funciones al presionar un botón. -->
+
+<h2>Hazlo tú mismo 2</h2>
+<h2>función de expresión</h2>
+<button onclick="iniciar()">find max</button>
+<p id="max"></p>
+
+<script>
+
+    const maxBetween3Numbers = function(n1, n2, n3) {
+        return Math.max(n1, n2, n3); 
+    };
+    
+    function iniciar () {
+    let num1 = parseInt(prompt("Ingrese un número"));
+    let num2 = parseInt(prompt("Ingrese un número"));
+    let num3 = parseInt(prompt("Ingrese un número"));
+    // Llamando a la función   
+    let maxNumber = maxBetween3Numbers(num1, num2, num3);
+    console.log(maxNumber);
+    document.getElementById("max").innerText = "Número mayor : " + maxNumber;
+    }
+</script>
+</body>
+</html>
+    

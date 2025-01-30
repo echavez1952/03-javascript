@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- 
+Hazlo tú mismo 8
+A. Escribe una función de expresión que acepta un arreglo y un número. La
+función retornará true si el número existe en el arreglo.
+B. Invoca la función de A usando arr = [1, 6, 2, 9] y num = 6, y alerta si el número
+existe en el arreglo. -->
+
+<h2>Hazlo tu mismo 8</h2>
+<h2>función de expresión</h2>
+
+<script>
+    const findNumberArray = function (arr, number) {
+        console.log(arr);
+        let pos = (arr.indexOf(number));
+        let posNum = parseInt(pos);
+        console.log(posNum);
+        if (posNum == 0 || posNum > 0) {
+            alert("El número " + number + " SI existe en el arreglo " + arr);
+        } else {
+            alert("El número " + number + " NO existe en el arreglo " + arr);
+        }
+    }
+        // Llamando a la función
+        let arr = [1, 10, 6, 2, 9];
+        let num = 8;
+        findNumberArray(arr, num);
+</script>
+</body>
+
+</html>
