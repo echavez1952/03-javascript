@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+// Actualizar un value
+<script>
+    var player = {
+        name: "Asaf",
+        level: 3,
+        points: 8,
+        updateLevel: function () {
+            this.level++;
+            return this.level;
+        }
+    }
+    console.log(player.updateLevel());  // 4
+    console.log(player); // {name: 'Asaf', level: 4, points: 8, updateLevel: ƒ}
+</script>
+</body>
+
+</html>

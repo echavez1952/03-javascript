@@ -17,16 +17,14 @@ B. Invoca la función de A usando arr = [1, 6, 2, 9] y alerta el número más gr
 
 <script>
 const maxNumberArray = function(arr) {
-        console.log(arr);
-        // Sort the numbers in ascending order:
-        arr.sort(function(a, b) { return a - b });
-        console.log(arr);
-        maxNumber = arr[arr.length - 1];
-        alert(maxNumber);
+    let maxNumber = Math.max(...arr)
+    console.log(arr);  // (4) [1, 6, 2, 9]
+    console.log(maxNumber); // 9
+    return maxNumber;
     }
     arr = [1, 6, 2, 9];
     maxNumberArray(arr);
-    console.log(maxNumber);
+    
 
 </script>
 </body>

@@ -17,19 +17,15 @@ existe en el arreglo. -->
 <h2>función de declaración</h2>
 
 <script>
-function findNumberArray(arr, number) {
-    console.log(arr);
-    posNum = (arr.indexOf(number));
-    if (posNum == 0 || posNum > 0) {
-    alert("El número " + number + " SI existe en el arreglo " + arr);
-    }else{
-    alert("El número " + number + " NO existe en el arreglo " + arr);
-    }   
-}
+function findNumberArray(array, number) {
+  let isNumberPresent = array.indexOf(number);
+  return isNumberPresent >= 0 ? console.log(true) : console.log(false);     
+}   
+
     // Llamando a la función
-    arr = [1, 10, 6, 2, 9];
-    num = 6;
-    findNumberArray(arr, num);
+    arreglo = [1, 10, 6, 2, 9];
+    numero = 6;
+    findNumberArray(arreglo, numero);
 
     </script>
 </body>

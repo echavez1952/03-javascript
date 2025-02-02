@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- 
+Alternativamente, puedes crear un objeto siguiendo estos 2 pasos:
+1. Define el objeto escribiendo una función constructora. Existe una convención fuerte,
+   que con una buena razón, inicia con mayúscula.
+2. Crea una instancia del objeto con “new”.
+   Para definir un objeto, crea una función para el objeto que especifique su nombre,
+   propiedades y métodos. Por ejemplo, supón que quieres creer un objeto para autos.
+   Quieres que este objeto se llame Car y quieres que tenga propiedades para make, model
+   y year. Para hacer esto, escribirías la siguiente función: -->
+<script>
+    function Car(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    let myCar = new Car('Eagle', 'Talon TSi', 1993);
+    console.log(myCar); 
+    // Car {make: 'Eagle', model: 'Talon TSi', year: 1993}
+    let kenscar = new Car('Nissan', '300ZX', 1992);
+    console.log(kenscar);
+    // Car {make: 'Nissan', model: '300ZX', year: 1992}
+    let vpgscar = new Car('Mazda', 'Miata', 1990);
+    console.log(vpgscar);
+    // Car {make: 'Mazda', model: 'Miata', year: 1990}
+
+    function Persona(firstName, lastName, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age; 
+    }  
+    let persona1 = new Persona("Michael", "Valdiviezo", 36);
+    let persona2 = new Persona("Edwin", "Chavez", 72);
+    console.log(persona1);
+    console.log(persona2);
+    // Persona {firstName: 'Michael', lastName: 'Valdiviezo', age: 36}
+    // Persona {firstName: 'Edwin', lastName: 'Chavez', age: 72}
+</script>
+
+</body>
+
+</html>

@@ -13,32 +13,29 @@
         // Adds one or more elements to the end of an array and returns 
         // the new length of the array
         let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
-        console.log(arr2);
-        console.log(arr2.push(9));
-        console.log(arr2.push(10));
-        console.log(arr2);
+        console.log(arr2); // 8) [1, 2, 3, 4, 5, 6, 7, 8]
+        console.log(arr2.push(9)); // 9
+        console.log(arr2.push(10)); // 10
+        console.log(arr2);  // (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
         // Otra forma de insertar un item al final
         let fruits = ["Banana", "Orange", "Apple", "Mango", "Peach"];
-        console.log(fruits);
-        fruits[fruits.length] = "Kiwi";
-        console.log(fruits);
+        console.log(fruits); // (5) ['Banana', 'Orange', 'Apple', 'Mango', 'Peach']
+        fruits[fruits.length] = "Kiwi"; 
+        console.log(fruits); // (6) ['Banana', 'Orange', 'Apple', 'Mango', 'Peach', 'Kiwi']
 
         let arr = new Array("Asaf", "is", "good", "man");
         arr.push("wooow");
-        console.log(arr[4]);
+        console.log(arr[4]); // wooow
 
         let animals = ['pigs', 'goats', 'sheep'];
-        console.log(animals);
+        console.log(animals); // (3) ['pigs', 'goats', 'sheep']
         let count = animals.push('cows');
-        console.log(count);
-        // expected output: 4
-        console.log(animals);
-        // expected output: Array ["pigs", "goats", "sheep", "cows"]
+        console.log(count); // 4
+        console.log(animals); // (4) ['pigs', 'goats', 'sheep', 'cows']
         animals.push('chickens', 'cats', 'dogs');
         console.log(animals);
-        // expected output: Array ["pigs", "goats", "sheep", "cows", "chickens",
-        //"cats", "dogs"]
+        // (7) ['pigs', 'goats', 'sheep', 'cows', 'chickens', 'cats', 'dogs']
     </script>
 </body>
 

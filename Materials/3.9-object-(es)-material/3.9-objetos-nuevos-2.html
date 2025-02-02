@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Creando objetos nuevos
+JS tiene unos objetos predeterminados. Adicionalmente, puedes crear tus propios objetos.
+Puedes crear un objeto usando un inicializador de objeto.
+Alternativamente, puedes primero crear una función constructora y después instar un objeto
+invocando esa función en conjunción con el nuevo operador.
+La sintaxis para un objeto usando un inicializador de objeto es: -->
+
+<script>
+var obj = {
+    property_1: "edwin", // property_# puede ser un inicializador...
+    property_2: "chavez",
+    property_3: 72, // o un número...
+    property_4: "casado" // o un string
+};
+console.log(obj);
+
+// 
+
+var myHonda = {
+    color: 'red',
+    wheels: 4,
+    engine: {
+        cylinders: 4,
+        size: 2.2
+    }
+};
+console.log(myHonda);
+
+</script>
+</body>
+</html>

@@ -20,19 +20,13 @@ existe en el arreglo. -->
 
 <script>
     const findNumberArray = function (arr, number) {
-        console.log(arr);
-        let pos = (arr.indexOf(number));
-        let posNum = parseInt(pos);
-        console.log(posNum);
-        if (posNum == 0 || posNum > 0) {
-            alert("El número " + number + " SI existe en el arreglo " + arr);
-        } else {
-            alert("El número " + number + " NO existe en el arreglo " + arr);
-        }
+        let isNumberPresent = arr.find((elemento) => elemento == number);
+        return isNumberPresent >= 0 ? console.log(true) : console.log(false);
+        
     }
         // Llamando a la función
         let arr = [1, 10, 6, 2, 9];
-        let num = 8;
+        let num = 2;
         findNumberArray(arr, num);
 </script>
 </body>
