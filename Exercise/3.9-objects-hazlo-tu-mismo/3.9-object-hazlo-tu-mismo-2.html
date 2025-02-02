@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+Hazlo tu mismo 2
+1. Crea un objeto llamado Persona usando un constructor y dale las siguientes
+   propiedades: nombre, apellido y edad.
+2. Crea dos instancias del objeto
+    a. Primera instancia p1 : “Michael”, “Jordan”, 49.
+    b. Segunda instancia p2 : “Lara”, “bili”, 74 -->
+<script>
+
+// Usando constructor
+function Persona(firstName, lastName, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age; 
+ }  
+ let person1 = new Persona("Michael", "Valdiviezo", 36);
+ let person2 = new Persona("Edwin", "Chavez", 72);
+ console.log(person1); // Persona {firstName: 'Michael', lastName: 'Valdiviezo', age: 36}Persona {firstName: 'Michael', lastName: 'Valdiviezo', age: 36}
+ console.log(person2); // Persona {firstName: 'Edwin', lastName: 'Chavez', age: 72}
+
+</script>
+</body>
+</html>
